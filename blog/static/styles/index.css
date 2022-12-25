@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ddd;
+}
+
+h1 {
+  text-align: center;
+}
+
+.post {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.body {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.new-post {
+  display: block;
+  margin: 1rem 0 2rem 1rem;
+}
+
+.message {
+  color: #00f;
+}

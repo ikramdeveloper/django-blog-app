@@ -1,0 +1,10 @@
+[
+  {
+    "model": "app.post",
+    "pk": 1,
+    "fields": {
+      "title": "Dummy Post",
+      "body": "lorem ipsum dolor sit amet"
+    }
+  }
+]

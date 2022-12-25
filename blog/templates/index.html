@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Django Blog App</h1>
+    {% for message in messages %}
+    <p class="message">{{message}}</p>
+
+    {% endfor %} {% for post in posts reversed %}
+    <article class="post">
+      <h3 class="title">{{post.title}}</h3>
+      <p class="body">{{post.body|truncatewords:5}}</p>
+      <p><b>Created at:</b> {{post.created_at}}</p>
+      <a href="/post/{{post.pk}}/">View post</a>
+    </article>
+    {% endfor %}
+    <a href="/create-post" class="new-post">Create new post</a>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+input {
+  margin: 0.5rem 0 1rem;
+}
+
+button {
+  margin-top: 0.5rem;
+}
